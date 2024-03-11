@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "categoria": "TERMINOLOGIA E SIMBOLOGIA TÊXTIL",
+    "nome": "INTERNA 01",
+    "anoPublicaçao": "1993",
+    "dataAtualizacao": "01/01/2021",
+    "descricao": "Fibras têxteis – Classificação.",
+    "link": "http://abnt.org.br/paginampe/biblioteca/files/upload/anexos/pdf/8cc6045e6c1c8f8b77266cd5a70025c4.pdf"
+  },
+  {
+    "id": 2,
+    "categoria": "TERMINOLOGIA E SIMBOLOGIA TÊXTIL",
+    "nome": "INTERNA 02",
+    "anoPublicaçao": "2010",
+    "dataAtualizacao": "01/01/2021",
+    "descricao": "Têxteis – Códigos de cuidado usando símbolos (ISO 3758:2005, IDT)",
+    "link": "https://www.abqct.com.br/wp-content/uploads/2019/05/QT_8.pdf"
+  },
+  {
+    "id": 3,
+    "categoria": "MASSAS TÊXTEIS, INCLUINDO TITULAGEM",
+    "nome": "INTERNA 03",
+    "anoPublicaçao": "1984",
+    "dataAtualizacao": "01/01/2021",
+    "descricao": "Emprego do sistema tex para expressar títulos têxteis – Procedimento",
+    "link": "http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf"
+  },
+  {
+    "id": 4,
+    "categoria": "MASSAS TÊXTEIS, INCLUINDO TITULAGEM",
+    "nome": "INTERNA 04",
+    "anoPublicaçao": "1990",
+    "dataAtualizacao": "01/01/2021",
+    "descricao": "Designação dos fi os no sistema TEX – Procedimento",
+    "link": "http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf"
+  },
+  {
+    "id": 5,
+    "categoria": "MASSAS TÊXTEIS, INCLUINDO TITULAGEM",
+    "nome": "INTERNA 05",
+    "anoPublicaçao": "1991",
+    "dataAtualizacao": "01/01/2021",
+    "descricao": "Cálculo da massa comercial de fi bras têxteis – Procedimento",
+    "link": "http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf"
+  },
+  {
+    "id": 6,
+    "categoria": "MASSAS TÊXTEIS, INCLUINDO TITULAGEM",
+    "nome": "INTERNA 06",
+    "anoPublicaçao": "1995",
+    "dataAtualizacao": "01/01/2021",
+    "descricao": "Mistura de fibra – Análise quantitativa – Eliminação prévia de matérias não fibrosas – Método de ensaio",
+    "link": "http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf"
+  },
+  {
+    "id": 7,
+    "categoria": "SOLIDEZ DE COR EM PRODUTOS TÊXTEIS",
+    "nome": "INTERNA 07",
+    "anoPublicaçao": "2011",
+    "dataAtualizacao": "01/01/2021",
+    "descricao": "Têxteis – Ensaios de solidez da cor – Parte A01: Princípios gerais de ensaio",
+    "link": "http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf"
+  }
+]

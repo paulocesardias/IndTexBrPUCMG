@@ -1,0 +1,37 @@
+﻿.logon-container{
+max-width: 500px;
+height: auto;
+margin: auto;
+max-height: 800px;
+margin-top: 0px; 
+padding-bottom: 90px;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: white;
+}
+
+.logon-container section.form{
+    max-width: 350px;
+    align-items: center;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.logon-container section.form form{
+     margin-top:  25px;
+     color: #581919; 
+     align-items: center;
+}
+
+.logon-container section.form form h1{
+    font-size: 32px;
+    margin-bottom:32px;
+
+}
+
+.logo{
+    margin:8px;
+}
+

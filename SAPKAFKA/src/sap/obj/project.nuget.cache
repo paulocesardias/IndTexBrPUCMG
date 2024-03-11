@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "JrMWdI0MhdNNngLMpq50ZuS+PoYPfbzK9qQQXMU6PTApuUkSUt9MQAc56/FZqq/0n5yOhOH/eY6EGNjHXOgOag==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Murilo\\Documents\\ProjetoTCCPUC\\SAPKAFKA\\src\\sap\\Sap.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Murilo\\.nuget\\packages\\confluent.kafka\\1.5.1\\confluent.kafka.1.5.1.nupkg.sha512",
+    "C:\\Users\\Murilo\\.nuget\\packages\\librdkafka.redist\\1.5.0\\librdkafka.redist.1.5.0.nupkg.sha512",
+    "C:\\Users\\Murilo\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Murilo\\.nuget\\packages\\system.memory\\4.5.0\\system.memory.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
