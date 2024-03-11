@@ -1,0 +1,805 @@
+{
+	"info": {
+		"_postman_id": "031752bd-bfa9-4a4d-9296-42365b46d69c",
+		"name": "SIGO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET PROCESSOS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer 2qaE-3CfpbYg2A_Y2tb4Yhp1IP18M1rllOJ0xTVH335Rl52zLDW2MpJy0HxH7LBHBxeYN9FpFeCVOKydF_81IMwSjJKGT3m2nZZCxQ8ye4vL2krYDGVW4NqVgrwg8rZ5PcLlFouEkCiLAnTi2_xJwxHXjA0Yg7_V40WkAVxRqHlqV-6YzdYNPdjoQAT8aSoMGg0Pv7dwk2CWAUBoyHxqjCRtmdhqHPYJMisCvD4KBO5OilMerpYVhM18gfF2bPsQkzPGNa6McUjJnVytnjy5obgV7DRRcBzaqm4lRpIV08J3-mOZxocH7-fill4yMOKw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/GestaoProcessos/api/Processos/",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"GestaoProcessos",
+						"api",
+						"Processos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET PROCESSOS->NORMAS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/GestaoProcessos/api/Normas/",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"GestaoProcessos",
+						"api",
+						"Normas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST PROCESSOS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"descricao\": \"Produção de Tecido Vermelho\",\r\n        \"precoVenda\": 5000.0,\r\n        \"custo\": 500.0,\r\n        \"qatdeMarquinasUtilizadas\": 2,\r\n        \"horasEstimadas\": 8,\r\n        \"norma\": null\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/GestaoProcessos/api/Processos/",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"GestaoProcessos",
+						"api",
+						"Processos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT PROCESSOS",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/GestaoProcessos/api/Processos/",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"GestaoProcessos",
+						"api",
+						"Processos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEL PROCESSOS",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/GestaoProcessos/api/Processos/4",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"GestaoProcessos",
+						"api",
+						"Processos",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET CONSULTORIAS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer sY0r_biexFAK7PCdZyT-oYidvnDhqEiVj5JcxJ_1C1SRYX_L0S1DPdAq8FU_hhRvKC34v2MRWYo0KGx3SAVa-iMfSbII1nPNqwtaiA1Y6EsmDEC9BQmdAGmXkHcfnoGfk6dZdiMkrWvWK4QBG1oQYlN9M7CFmRV048iNGVACYtUze4Df3bDUe8l8iU53BoXigWjO1-9SkILv4VD2dpoWDbM3k-3nlTA1Z1Mq6pkyPStoOefzQYqxY0zAZk1Kd7XiiUORBactlpLlQKdOCN82pYMd6WLr4ofgBq5rZ07S7Y09x4qUBuTltSiitJfbSWiA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/ConsultoriaAssessoria/api/Consultorias/",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"ConsultoriaAssessoria",
+						"api",
+						"Consultorias",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET CONSULTORIAS->NORMAS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer X85wHcY4U1P8Qe8TReRVTgX-UOHgiSzZn_cWPg6QUz0uQYYutocDoIOrwPe6RIhE-yIk5dKf9szyV3xEvbCL_4URoUBOGMRsrw8TDFJIqLc3KZIKgHBIiYTuOxyugj1AT5n05X0t3C-e2EScR-Vggj5gjtktgcRWOva3VDNF6cimX85-v_iPCXgVO_0p9PmDLv9PYJBihERUYb9X134Njy245uPOGRpwUSeW3_IhdxG4gCNIzu9yz9KnWEq_oYJd1-HYwdazUgJ9aupC8mxpqM6-Wqg_k2Qo0_0p07At6hw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/ConsultoriaAssessoria/api/Normas/",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"ConsultoriaAssessoria",
+						"api",
+						"Normas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST CONSULTORIAS",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer sY0r_biexFAK7PCdZyT-oYidvnDhqEiVj5JcxJ_1C1SRYX_L0S1DPdAq8FU_hhRvKC34v2MRWYo0KGx3SAVa-iMfSbII1nPNqwtaiA1Y6EsmDEC9BQmdAGmXkHcfnoGfk6dZdiMkrWvWK4QBG1oQYlN9M7CFmRV048iNGVACYtUze4Df3bDUe8l8iU53BoXigWjO1-9SkILv4VD2dpoWDbM3k-3nlTA1Z1Mq6pkyPStoOefzQYqxY0zAZk1Kd7XiiUORBactlpLlQKdOCN82pYMd6WLr4ofgBq5rZ07S7Y09x4qUBuTltSiitJfbSWiA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"departamento\": \"Segurança e Qualidade\",\r\n        \"setor\": \"Inspeção Qualidade Fornecedores\",\r\n        \"razaoSocial\": \"CGA Consultoria Ambiental Ltda\",\r\n        \"nomeFantasia\": \"CGA GEO Consultoria Ambiental\",\r\n        \"cnpj\": \"01.432.935/0001-00\",\r\n        \"dtContratacao\": \"90604362000184\",\r\n        \"periodoContratacao\": \"10 meses\",\r\n        \"ativo\": \"Em Andamento\",\r\n        \"dtInicio\": \"28/01/2021\",\r\n        \"dtTermino\": \"28/11/2021\",\r\n        \"norma\": \"ABNT554676\",\r\n        \"descricao\": \"Consultoria\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/ConsultoriaAssessoria/api/Consultorias/",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"ConsultoriaAssessoria",
+						"api",
+						"Consultorias",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT CONSULTORIAS",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/ConsultoriaAssessoria/api/Normas/",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"ConsultoriaAssessoria",
+						"api",
+						"Normas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEL CONSULTORIAS",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer Q1vU5vstjiYaibW4s8blYJyCjizMp1NOwDWJhOaUNF0dI2IijS8MITtrrBgJSkCJ02kgPbfReIM3_J-oFbMOcQofJ9rSbKxnbnnSbraXpazvwdIbYLA5l7vQZllfpAzfjeoKR0Xpi9t4iGXqrRCqsd1ZbTl3hMA89w1BVqBxhQ94on4CyIsWRTRL8YapDBqp4fKJe4h0L6NamaT14YGwJ85zMOdWdo1TtZkAvb5K3JYjzsrv9ubQgcOEzFYFWbQdXAWkxcYBIp9MX7xWUkqcKoOOps0_7VMdkVP7wvcyvLBbRtusa0O_sts_JEhUiFp8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n        \"id\" : \"2\"\r\n        \"categoria\": \"TERSTES\",\r\n        \"nome\": \"ABNT NBR 12744:1993\",\r\n        \"anoPublicaçao\": \"1993\",\r\n        \"descricao\": \"Fibras têxteis – Classificação.\",\r\n        \"link\": \"http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/ConsultoriaAssessoria/api/Consultorias/2",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"ConsultoriaAssessoria",
+						"api",
+						"Consultorias",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET NORMAS ",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer N0gQBRipn70x2WYASBzuOHt5LmBtqgLA8_H6elQYTF0FhqF9z5i94m2jusXLLHwDP-aB0wGh5mo8tKBPvGPsJu-4MBTxTR7K3pVn6Jole-ZEzHf-BbvBnI41iV1chQ7Kult-uRnlOD6pRa0VKL0ABSxiY4UQvrDHg8d2P_RPrY4pNzN3QjcOjUAoQA1f_TOwxhs3OR2MyyZvniw44Nv7B0L08Ge7xQSHKfGX_I05aNksKJdMMQ2Zp9hKDUIJ4YaHDu-vQyxB8z0DI8o-gXiJqzvy6ADgbkT_mlFTsLiw4i0GiVF1qHk12VWdP35cX4rJ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/GestaoNormas/api/Normas/",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"GestaoNormas",
+						"api",
+						"Normas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET NORMAS EXTERNAS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "bearer N0gQBRipn70x2WYASBzuOHt5LmBtqgLA8_H6elQYTF0FhqF9z5i94m2jusXLLHwDP-aB0wGh5mo8tKBPvGPsJu-4MBTxTR7K3pVn6Jole-ZEzHf-BbvBnI41iV1chQ7Kult-uRnlOD6pRa0VKL0ABSxiY4UQvrDHg8d2P_RPrY4pNzN3QjcOjUAoQA1f_TOwxhs3OR2MyyZvniw44Nv7B0L08Ge7xQSHKfGX_I05aNksKJdMMQ2Zp9hKDUIJ4YaHDu-vQyxB8z0DI8o-gXiJqzvy6ADgbkT_mlFTsLiw4i0GiVF1qHk12VWdP35cX4rJ"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/GestaoNormas/api/NormasExternas/",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"GestaoNormas",
+						"api",
+						"NormasExternas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST NORMAS",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer lKVIM42UvvbT5bPkGNEiPVZFCUOiDmMHhd1-QR-ZGdlTPZgDwHIn9-sKpDDnMYDX1XRaZrejPyz231kvuFzlBUqnUNMG7Ng4wJZRy2i2IQVpskFYChq7HS29au0FKPAyCIaI2jEbQELPw1ERhZCOXZuoHR_hddLyORiHYQtyqZbdvTz_gqcTAylVuelWep4xj9y_eMl63sfyJOS6CFfZ5AV1jsToJLVZ1sdqctSaGyjhnhXKjYjwnYfqsZREBo5VWhdOrsReIk9_A99Z0_gbNiVu5SbsdtqmQeSGOghdfg-ASua6z39sdQhzZxlfaAzh",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"categoria\": \"TERSTES\",\r\n        \"nome\": \"ABNT \",\r\n        \"anoPublicaçao\": \"1993\",\r\n        \"descricao\": \"Fibras \",\r\n        \"link\": \"http:\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/GestaoNormas/api/Normas/",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"GestaoNormas",
+						"api",
+						"Normas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT NORMAS",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer z5TUXZ7VVFH8VUKZubfITXpX-Uw2Zlz6P3M01TFkztzYua90dQ83r4AfiJeETbnzlfUbAnd4f4zmPGC4_12yA1gJMSqp25KGz7XBmNatR6Nna0IcFlvDfVpoktbXhrDZrMwCVEfxOnUIzVAeKGf8lDPjBwPbqGLMv1bQ32lDQurJRRSyXhTODCR35t9MrQiSHYJFUK_6iw1_2fb3vo_XquB4R3hDjyDWZkHua3sTF9HuwX5y8787_tpvVY_05dO5umlClbZX_DUugKW5R-ZMc3sFToNcUkBrmgsQyuTk_jKjwwLm8WAcbDKo5lkzCSAH",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"26\",\r\n        \"categoria\": \"TERSTE33S hehe\",\r\n        \"nome\": \"ABNT NBR 12744:1993\",\r\n        \"anoPublicaçao\": \"1993\",\r\n        \"descricao\": \"Fibras têxteis – Classificação.\",\r\n        \"link\": \"http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/GestaoNormas/api/Normas/26",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"GestaoNormas",
+						"api",
+						"Normas",
+						"26"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEL NORMAS",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer z5TUXZ7VVFH8VUKZubfITXpX-Uw2Zlz6P3M01TFkztzYua90dQ83r4AfiJeETbnzlfUbAnd4f4zmPGC4_12yA1gJMSqp25KGz7XBmNatR6Nna0IcFlvDfVpoktbXhrDZrMwCVEfxOnUIzVAeKGf8lDPjBwPbqGLMv1bQ32lDQurJRRSyXhTODCR35t9MrQiSHYJFUK_6iw1_2fb3vo_XquB4R3hDjyDWZkHua3sTF9HuwX5y8787_tpvVY_05dO5umlClbZX_DUugKW5R-ZMc3sFToNcUkBrmgsQyuTk_jKjwwLm8WAcbDKo5lkzCSAH",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"2\",\r\n        \"categoria\": \"TERSTES\",\r\n        \"nome\": \"ABNT NBR 12744:1993\",\r\n        \"anoPublicaçao\": \"1993\",\r\n        \"descricao\": \"Fibras têxteis – Classificação.\",\r\n        \"link\": \"http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/GestaoNormas/api/Normas/2789",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"GestaoNormas",
+						"api",
+						"Normas",
+						"2789"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TOKEN",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "murilo@sigo.com.br",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/token",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TESTES TOKEN",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "murilo@sigo.com.br",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:44392/token",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TESTES NORM",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer A2bwIr6gibk_j4BbAHIUJogY_Cf2gmWuR3kZikq4d39Mp3_Ft2gDVHlsQLZuSiLhS5uLPmuTksVISZPo5yfmS3-oaUA1D2v3sqnIX_G2hYFLTAGJEQ5DTHH2EZN39dToSXH4wkbXODc6cEAfGcIV6QhzEi7svX54eeT0L-1rhbxzxLIQ3n6PZnLgK5ehIhhLa-qwKsVb_NmdAwkbJFQme_2trl5WCA5XwUkudOKahBXa0QR1Y9SndDmhh18c3aAg6i61W0uQ8JVQAeU8OMLCYT4ZbLpVIePH_lqUQ27f_IhARPg8BvCJJ7mU3easq4lS",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 12,\r\n        \"categoria\": \"TERSTESpub\",\r\n        \"nome\": \"ABNT \",\r\n        \"anoPublicaçao\": \"1993\",\r\n        \"dataAtualizacao\": \"01/01/2021\",\r\n        \"descricao\": \"Fibras \",\r\n        \"link\": \"http:\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/Normas/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Normas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SAP CONNECTOR",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "bearer A2bwIr6gibk_j4BbAHIUJogY_Cf2gmWuR3kZikq4d39Mp3_Ft2gDVHlsQLZuSiLhS5uLPmuTksVISZPo5yfmS3-oaUA1D2v3sqnIX_G2hYFLTAGJEQ5DTHH2EZN39dToSXH4wkbXODc6cEAfGcIV6QhzEi7svX54eeT0L-1rhbxzxLIQ3n6PZnLgK5ehIhhLa-qwKsVb_NmdAwkbJFQme_2trl5WCA5XwUkudOKahBXa0QR1Y9SndDmhh18c3aAg6i61W0uQ8JVQAeU8OMLCYT4ZbLpVIePH_lqUQ27f_IhARPg8BvCJJ7mU3easq4lS",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\":20,\r\n        \"descricao\": \"Produção de Tecido Vermelho\",\r\n        \"precoVenda\": 4250.00,\r\n        \"custo\": 3500.0,\r\n        \"qatdeMarquinasUtilizadas\": 4,\r\n        \"horasEstimadas\": 14,\r\n        \"norma\": \"ABNT NBR 10677:1989\",\r\n        \"status\":1\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8010/sap/NovoProcesso",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"sap",
+						"NovoProcesso"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TESTES NORM EXTERNA",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer A2bwIr6gibk_j4BbAHIUJogY_Cf2gmWuR3kZikq4d39Mp3_Ft2gDVHlsQLZuSiLhS5uLPmuTksVISZPo5yfmS3-oaUA1D2v3sqnIX_G2hYFLTAGJEQ5DTHH2EZN39dToSXH4wkbXODc6cEAfGcIV6QhzEi7svX54eeT0L-1rhbxzxLIQ3n6PZnLgK5ehIhhLa-qwKsVb_NmdAwkbJFQme_2trl5WCA5XwUkudOKahBXa0QR1Y9SndDmhh18c3aAg6i61W0uQ8JVQAeU8OMLCYT4ZbLpVIePH_lqUQ27f_IhARPg8BvCJJ7mU3easq4lS",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/NormasExternas/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"NormasExternas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TESTES PROC",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "bearer mQUMDZ9o8aWA9aKnwiD1VlClHQg29SnMGjquJI3V876r-YRbbw7jfxQGPpkzjKx34ogBJIR_Cg9sTFNSRRZc9h92SkX5tRpR463QR1OA3KkxQ_iXr2eG7qBDtoJtiW8Z__JPeenVz7ufuZRCzPOLwxxdJgOsMQrK6OQRGrZvwMh06mvp5zS43LV29x_YS2IhQfaPwovXdmZT1tjJEJDiH2EszFqtPXaBgv1KE1p6Hqr1h6oSK8I2tDn0hKypZ78tXHUtOkrLSCiDK282oOHq5PLZjvfFQfevSa4REse8iZSJoooSsQm16I53XZW-Hg9o"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44386/api/Processos/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44386",
+					"path": [
+						"api",
+						"Processos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TESTES AUDIT",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "bearer mQUMDZ9o8aWA9aKnwiD1VlClHQg29SnMGjquJI3V876r-YRbbw7jfxQGPpkzjKx34ogBJIR_Cg9sTFNSRRZc9h92SkX5tRpR463QR1OA3KkxQ_iXr2eG7qBDtoJtiW8Z__JPeenVz7ufuZRCzPOLwxxdJgOsMQrK6OQRGrZvwMh06mvp5zS43LV29x_YS2IhQfaPwovXdmZT1tjJEJDiH2EszFqtPXaBgv1KE1p6Hqr1h6oSK8I2tDn0hKypZ78tXHUtOkrLSCiDK282oOHq5PLZjvfFQfevSa4REse8iZSJoooSsQm16I53XZW-Hg9o"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44311/api/Consultorias/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44311",
+					"path": [
+						"api",
+						"Consultorias",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
